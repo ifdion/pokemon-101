@@ -1,3 +1,23 @@
+# To Do List
+ - [x] Install create-react-app
+ - [x] Set netlify deployment
+ - [ ] (nav) Use `react-router` to create routes : `/` and `/:pokemonName`
+ - [ ] (home) Use `axios` to call api
+ - [ ] (home) Display a basic markup of pokemon cards
+ - [ ] (home) Implement infinite scroll
+ - [ ] (detail) Display a basic markup of pokemon card
+ - [ ] (home) Implement style on home page
+ - [ ] (detail) Implement style on detail page
+ - [ ] (pwa) Implement PWA / service worker
+ - [ ] (pwa) Show offline warning
+ - [ ] (pwa) Implement home page cache
+ - [ ] (pwa) Implement detail page cache
+ - [ ] (localstorage) Save favorite pokemon?
+
+
+# Notes
+ - No redux / state management for now, reduce complexity
+ 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
