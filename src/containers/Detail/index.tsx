@@ -23,7 +23,7 @@ function Detail() {
             setErrorMessage(errorMessage);
             setLoading(false);
         })
-    }, []);
+    }, [pokemonName]);
     
 
     return (
