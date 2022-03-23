@@ -1,11 +1,11 @@
 # To Do List
  - [x] Install create-react-app
  - [x] Set netlify deployment
- - [ ] (nav) Use `react-router` to create routes : `/` and `/:pokemonName`
- - [ ] (home) Use `axios` to call api
- - [ ] (home) Display a basic markup of pokemon cards
- - [ ] (home) Implement infinite scroll
- - [ ] (detail) Display a basic markup of pokemon card
+ - [x] (nav) Use `react-router` to create routes : `/` and `/:pokemonName`
+ - [x] (home) Use `axios` to call api
+ - [x] (home) Display a basic markup of pokemon cards
+ - [x] (home) Implement infinite scroll
+ - [x] (detail) Display a basic markup of pokemon card
  - [ ] (home) Implement style on home page
  - [ ] (detail) Implement style on detail page
  - [ ] (pwa) Implement PWA / service worker
@@ -16,7 +16,7 @@
 
 
 # Notes
- - No redux / state management for now, reduce complexity
+ - No redux / context / state management for now, reduce complexity
  
 # Getting Started with Create React App
 
