@@ -88,7 +88,9 @@ function getAbilities(base: any): { name: string, effect: string }[] {
     }
     return base.pokemon_v2_pokemons[0].pokemon_v2_pokemonabilities.map((x: any) => ({
         name: x.pokemon_v2_ability.name,
-        effect: x.pokemon_v2_ability?.pokemon_v2_abilityeffecttexts[0].short_effect || ''
+        effect: x.pokemon_v2_ability?.pokemon_v2_abilityeffecttexts[0]
+            ? x.pokemon_v2_ability?.pokemon_v2_abilityeffecttexts[0]?.short_effect
+            : ''
     }))
 }
 

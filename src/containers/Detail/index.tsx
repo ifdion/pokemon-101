@@ -1,3 +1,4 @@
+import localforage from "localforage";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import PokemonCard from "../../components/PokemonCard";
@@ -20,20 +21,31 @@ function Detail() {
         undefined as string | undefined
     );
     const [isLoading, setLoading] = useState(true);
+    const [isOffline, setIsOffline] = useState(false);
     const { pokemonName } = params;
 
     useEffect(() => {
         getPokemonsWithName(pokemonName)
             .then((res) => {
                 setPokemon(res);
+                localforage.setItem(`pokemonDetail/${pokemonName}`, res);
                 setLoading(false);
             })
-            .catch((err) => {
+            .catch(async (err) => {
                 console.error(err);
-                const errorMessage =
-                    err instanceof Error ? err.message : "Unknown error";
-                setErrorMessage(errorMessage);
+                
+                const res = await localforage.getItem(`pokemonDetail/${pokemonName}`) as PokemonInterface;
+                if (res) {
+                    setPokemon(res);
+                    setIsOffline(true);
+                } else {
+                    const errorMessage =
+                        err instanceof Error ? err.message : "Unknown error";
+                    setErrorMessage(errorMessage);
+                }
+
                 setLoading(false);
+
             });
     }, [pokemonName]);
 
@@ -43,7 +55,7 @@ function Detail() {
     return (
         <div className="detail">
             <div className="detail__navigator">
-                <Link to="/">Back to Home</Link>
+                <Link to="/">Back to Home</Link> {isOffline && (<span>offline</span>)}
             </div>
             {pokemon && <PokemonCard {...pokemon} />}
             {evolution && <PokemonEvolution evolution={evolution} />}

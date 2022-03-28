@@ -8,10 +8,10 @@
  - [x] (detail) Display a basic markup of pokemon card
  - [x] (home) Implement style on home page
  - [x] (detail) Implement style on detail page
- - [ ] (pwa) Implement PWA / service worker
- - [ ] (pwa) Show offline warning
- - [ ] (pwa) Implement home page cache
- - [ ] (pwa) Implement detail page cache
+ - [x] (pwa) Implement PWA / service worker
+ - [x] (pwa) Show offline warning
+ - [x] (pwa) Implement home page cache
+ - [x] (pwa) Implement detail page cache
  - [ ] (localstorage) Save favorite pokemon?
 
 
