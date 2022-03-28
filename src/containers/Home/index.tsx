@@ -4,6 +4,8 @@ import PokemonCard from "../../components/PokemonCard";
 import { getPokemonsWithOffset } from "../../helpers/api";
 import { PokemonInterface } from "../../interfaces/pokemon";
 
+import './Home.css';
+
 function Home() {
     const [pokemonList, setPokemonList] = useState([] as PokemonInterface[]);
     const [nextPage, setNextPage] = useState(1);
@@ -14,7 +16,6 @@ function Home() {
     }, []);
 
     function loadMore() {
-        console.debug('load more');
         getPokemonsWithOffset(nextPage).then((res) => {
             setPokemonList(pokemonList.concat(res));
             setNextPage(nextPage + 1);
@@ -23,6 +24,9 @@ function Home() {
 
     return (
         <div className="home">
+            <div className="home__navigator">
+                <strong>PokéMon 101</strong>
+            </div>
             <InfiniteScroll
                 dataLength={pokemonList.length}
                 next={loadMore}

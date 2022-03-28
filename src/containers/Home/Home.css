@@ -1,4 +1,26 @@
-.App {
+.home__navigator {
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-color: #F3D347;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.home__navigator strong {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* .home {
+  min-height: 100vh;
+  background: teal url('./images/table-top.jpg') fixed center center;
+  background-size: cover;
+} */
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +57,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

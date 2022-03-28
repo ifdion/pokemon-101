@@ -1,0 +1,9 @@
+.layout {
+    /* min-height: 100vh; */
+    /* background: teal url('./images/table-top.jpg') fixed center center; */
+    /* background-size: cover; */
+}
+.layout__container{
+    margin: 0 30px;
+    min-width: 300px;
+}

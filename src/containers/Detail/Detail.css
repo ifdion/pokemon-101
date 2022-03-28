@@ -1,0 +1,13 @@
+.detail__navigator {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #F3D347;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.detail__navigator a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}

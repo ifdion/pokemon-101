@@ -6,8 +6,8 @@
  - [x] (home) Display a basic markup of pokemon cards
  - [x] (home) Implement infinite scroll
  - [x] (detail) Display a basic markup of pokemon card
- - [ ] (home) Implement style on home page
- - [ ] (detail) Implement style on detail page
+ - [x] (home) Implement style on home page
+ - [x] (detail) Implement style on detail page
  - [ ] (pwa) Implement PWA / service worker
  - [ ] (pwa) Show offline warning
  - [ ] (pwa) Implement home page cache

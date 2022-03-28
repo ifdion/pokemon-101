@@ -1,0 +1,15 @@
+.pokemon-evolution {
+    float: left;
+    overflow-y: auto;
+    margin: 10px;
+    border: 10px solid #F3D347;
+    border-radius: 40px;
+    padding: 10px;
+    color: #666;
+    box-shadow: 10px 10px 10px -3px rgba(0,0,0,0.25);
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
